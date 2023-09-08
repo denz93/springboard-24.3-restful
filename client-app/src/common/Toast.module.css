@@ -1,0 +1,19 @@
+.toast {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+
+  & > div {
+    padding: 1em 1.5em;
+
+    &[data-type="error"] {
+      background-color: var(--error);
+    }
+
+    &[data-type="success"] {
+      background-color: var(--success);
+    }
+  }
+
+
+}
